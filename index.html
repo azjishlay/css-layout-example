@@ -1,0 +1,125 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <style>
+    body {
+      background-color: gray;
+    }
+    main {
+      margin: auto;
+      text-align: center;
+      width: 70%;
+    }
+    header,nav,section,aside,footer,article div {
+      background-color: lightgray;
+      border: 0px solid black;
+      margin-top: 10px;
+    }
+    header,nav,footer {
+      height: 80px;
+    }
+
+    header,nav,footer {
+    position: relative;
+    }
+    header p, nav p, footer p {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      /*justify-content:*/
+    }
+    section,aside {
+      /*float: left;*/
+      margin-bottom: 10px;
+    }
+    section {
+      width: 60%;
+      margin-right: 2%;
+    }
+    aside {
+      width: 38%;
+    }
+    footer {
+      /*clear: both;*/
+    }
+    article, article div {
+      border: 1px solid darkgray;
+      display: block;
+      margin: 0 10px 10px 10px;
+      /*width: 100%;*/
+    }
+    article {
+      background-color: gray;
+    }
+    article:nth-child(2) > div {
+      font-weight: bold;
+    }
+  </style>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <main>
+    <header>
+      <p>
+        header
+      </p>
+    </header>
+    <nav>
+      <p>
+        nav
+      </p>
+    </nav>
+
+    <div class="flex-container">
+      <section>
+        <p>section</p>
+
+        <article>
+          <p>
+            article
+          </p>
+          <div>
+            <p>
+              h1, h2, h3
+            </p>
+          </div>
+          <div>
+            <p>
+              p
+            </p>
+          </div>
+        </article>
+
+      </section>
+      <aside>
+        <p>
+          aside
+        </p>
+      </aside>
+    </div>
+
+    <footer>
+      <p>
+        footer
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
