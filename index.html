@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <title>CSS Layout Example</title>
+  <meta name="description" content="CSS Layout Example">
+  <meta name="author" content="lijasminej">
 
   <style>
     body {
@@ -25,7 +25,6 @@
     header,nav,footer {
       height: 80px;
     }
-
     header,nav,footer {
     position: relative;
     }
@@ -76,21 +75,27 @@
 
 <body>
   <main>
+    
+    <!-- header -->
     <header>
       <p>
         header
       </p>
     </header>
+    
+    <!-- nav -->
     <nav>
       <p>
         nav
       </p>
     </nav>
-
+    
+    <!-- .flex-container -->
     <div class="flex-container">
+      
+      <!-- section -->
       <section>
         <p>section</p>
-
         <article>
           <p>
             article
@@ -106,20 +111,23 @@
             </p>
           </div>
         </article>
-
       </section>
+      
+      <!-- aside -->
       <aside>
         <p>
           aside
         </p>
       </aside>
     </div>
-
+    
+    <!-- footer -->
     <footer>
       <p>
         footer
       </p>
     </footer>
+    
   </main>
 </body>
 </html>
